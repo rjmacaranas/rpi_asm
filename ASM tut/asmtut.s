@@ -4,6 +4,6 @@
 
 _start:                     @ label
     MOV R0, #65             @ store numbers in registers
-    MOV R7, #1
+    MOV R7, #1              @ system call number
 
-SWI 0                       @ software interrupt, exit to terminal
+SWI 0                       @ software interrupt, exits to terminal
